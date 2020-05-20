@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="googlebot" content="noindex">
+<meta name="robots" content="noindex">
+<meta name="referrer" content="never">
+<link rel="shortcut icon" href="https://www.google.com/s2/favicons?domain=jwplayer.com" type="image/x-icon">
+<title>Cloud</title>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://ssl.p.jwpcdn.com/player/v/7.12.12/jwplayer.js"></script>
+<style>body{margin:0;background:black;overflow:hidden}</style>
+</head>
+<body>
+<div id="player"></div>
+<script>function get(e,p){p||(p=window.location.href),e=e.replace(/[\[\]]/g,"\\$&");var i=new RegExp("[?&]"+e+"(=([^&#]*)|&|#|$)").exec(p);return i?i[2]?decodeURIComponent(i[2].replace(/\+/g," ")):"":null};jwplayer.key="XsWyeNQ1jdztTqhiD5MXEpz37wrnHdV05j7Ocg==",$.get("https://my.pcloud.com/publink/show?code="+get("v")+"/",function(e) {v=JSON.parse('{"l":"'+e.split('"downloadlink": "')[1].split('"')[0]+'","i":"'+e.split('"thumb": "')[1].split('"')[0]+'"}');jwplayer("player").setup({aspectratio:"16:9",image:v.i,file:v.l,type:"video/mp4",width: "100%"})})</script>
+</body>
+</html>
